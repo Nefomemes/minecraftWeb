@@ -5,19 +5,48 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <style>
+
 body {
 	margin: 0 0 0 0;
+	font-family: Arial;
 }
 	#first-div {
 		
 		height: 100vh;
 		width: 100vw;
+		display: flex;
+		align-items: center;
+		
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-image: url("assets/images/day.png");
+	}
+	#server-text {
+		margin-left: 40px;
+		color: white;
+		
+	}
+		#server-text p {
+		width: 75%;
+	}
+	#server-text .title {
+		font-family: "Bebas Neue";
+		font-size: 50px;
+		line-height: 0;
+		margin-bottom: 0;
+		width: initial;
+	}
+
+
+	@media only screen and (orientation: portrait){
+		#first-div {
+			background-position: right -457.75px top;
+		}
 	}
 </style>
       
@@ -25,6 +54,8 @@ body {
     <body>
 
 <style>
+
+
 			.icons {
 			width: 40px;
 			height: 40px 
@@ -72,7 +103,7 @@ body {
 		}		#footer {
 			background-color: #100A0A;
 			color: white;
-
+font-family: Arial;
 			padding-top: 40px;
 padding-left: 40px;
 padding-right: 40px;
@@ -96,25 +127,44 @@ margin-bottom: 40px;
 		#disclaimer-text, #og-theme-credit p {
 			text-align: justify;
 		}
+		
+		#og-theme-credit {
+	text-align: center;
+}
+
 
 </style>
         <!-- Add your site or application content here -->
-       <div id="first-div"></div>
+       <div id="first-div">
+       	
+       <div id="server-text">
+       	<p class="title">Nefomemes SMP</p>
+       	<p>Straight forward, Nefomemes's personal Minecraft SMP server.</p>
+       	</div>
+       </div>
        	<footer id="footer">
 
 		<nav id="navi-links">
 			<ul class="links-bar">
 				<li class="link-title">
-					This blog
+					The server itself
+					</li>
+				<li>Frequently Asked Questions</li>
+				<li>OPs</li>
+				<li>Plugins</li>
+			</ul>
+			<ul class="links-bar">
+				<li class="link-title">
+					This website
 				</li>
-				<li><a href="{{site.baseurl}}/privacy">Privacy Policy</a></li>
-				<li><a href="https://github.com/Nefomemes/blog">GitHub repo</a></li>
+				<li><a href="privacy">Privacy Policy</a></li>
+				<li><a href="https://github.com/Nefomemes/minecraftWeb">GitHub repo</a></li>
 			</ul>
 			<ul class="links-bar">
 				<li class="link-title">
 					Other stuff
 				</li>
-				<li>Blog</li>
+				<li><a href="https://blog.nefomemes.repl.co/">Blog</a></li>
 				<li>
 					Status page </li>
 
@@ -152,7 +202,7 @@ margin-bottom: 40px;
 		</p>
 </div>
 		<div id="footer-links">
-			<a href="https://github.com/Nefomemes"><img src="{{site.baseurl}}/assets/images/icons/github.svg" class="icons"></a>
+			<a href="https://github.com/Nefomemes"><img src="assets/images/icons/github.svg" class="icons"></a>
 <a><img src="/assets/images/icons/discord.svg" class="icons" id="discord-icon"></a>
 <a href="https://guilded.gg/Nefomemes"><img src="/assets/images/icons/guilded.svg" class="icons"></a>
 	<a href="https://reddit.com/u/NF-MIP"><img src="assets/images/icons/reddit.svg" id="reddit-logo" class="icons" ></a>
